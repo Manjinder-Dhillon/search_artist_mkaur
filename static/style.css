@@ -1,0 +1,63 @@
+body {
+    background-color: #f3e5f5;
+}
+
+.header {
+    text-align: center;
+    background-color: blueviolet;
+    padding-bottom: 10px;
+    margin-bottom: auto;
+}
+
+#container {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 360px;
+    background-color: #f3e5f5;
+}
+
+.item {
+    margin-top: 5px;
+    padding: 4px;
+    margin-top: auto;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: blueviolet;
+        ;
+    }
+}
+
+.flashes {
+    color: brown;
+}
+
+.artist {
+    text-align: center;
+}
+
+input:invalid~span:after {
+    content: '✖';
+    padding-left: 5px;
+    position: absolute;
+}
+
+input:valid~span:after {
+    content: '✓';
+    padding-left: 5px;
+    position: absolute;
+}

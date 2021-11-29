@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: darksalmon;" class="text-center">
+    <div class="container" style="background-color: pink;">
+        <h3 class="bg-info text-white">TOP TRACKS </h3>
+        <br> {% for i in range(0,1) %}
+
+        <div class="row">
+            <div class="col-md-5"> <img class="img-responsive" class="img-rounded" width="304" height="236" src="{{image[i]}}">
+                <audio controls src={{preview_url[i]}}>
+                            
+                            <code>audio</code> 
+                    </audio>
+                <p><a href="{{lyrics_url}}" style=" font-size: 20px; text-decoration: none;">Click here to see the Links!</a></p>
+            </div>
+            <div class="col-md-5" style="background-color: yellow;">
+                <h2><b> {{name[i]}}</b></h2>
+                <h2><b> by {{artists[i]}}</b></h2>
+            </div>
+            <br><br>
+            <div class="col-md-5" style="background-color: rgb(243, 165, 101);">
+                <h2>Save a favorite artist id for later:</h2>
+                <form method="POST" action="/index" autocomplete="on">
+                    <input type="text" name="artist_id" placeholder="Artist ID" required>
+                    <button type="submit" type="button" class="btn btn-default active">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <br>
+
+
+        <br> {% endfor %}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
