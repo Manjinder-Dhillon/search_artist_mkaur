@@ -10,11 +10,11 @@
 
 <body style="background-color: darksalmon;" class="text-center">
     <div class="container" style="background-color: pink;">
-        <h3 class="bg-info text-white">TOP TRACKS </h3>
+        <h3 class="bg-info text-dark">TOP TRACKS </h3>
         <br> {% for i in range(0,1) %}
 
         <div class="row">
-            <div class="col-md-5"> <img class="img-responsive" class="img-rounded" width="304" height="236" src="{{image[i]}}">
+            <div class="col-md-5"> <img class="img-responsive" width="304" height="236" src="{{image[i]}}">
                 <audio controls src={{preview_url[i]}}>
                             
                             <code>audio</code> 
